@@ -25,6 +25,26 @@ class MenuDto {
     );
   }
 
+  factory MenuDto.fromEntity(Menu entity) {
+    return MenuDto(
+      id: entity.id,
+      name: entity.name,
+      price: entity.price,
+      category: entity.category,
+      note: entity.note,
+    );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'name': name,
+      'price': price,
+      'category': category,
+      'note': note,
+    };
+  }
+
   Menu toEntity() {
     return Menu(
       id: id,
