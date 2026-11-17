@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "Coto",
+    "price": 25000,
+    "category": "coto",
+    "note": "Daging / Campur"
+  },
+  {
+    "id": "2",
+    "name": "Ketupat",
+    "price": 3000,
+    "category": "ketupat",
+    "note": null
+  },
+  {
+    "id": "3",
+    "name": "Air Mineral",
+    "price": 5000,
+    "category": "minuman",
+    "note": "Dingin / Biasa"
+  }
+]
