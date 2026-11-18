@@ -39,7 +39,7 @@ class _MenuFormDialogState extends State<MenuFormDialog> {
           : '',
     );
     _categoryController = TextEditingController(
-      text: widget.existingMenu?.category ?? 'Coto',
+      text: widget.existingMenu?.category ?? '',
     );
     _noteController = TextEditingController(
       text: widget.existingMenu?.note ?? '',
@@ -85,10 +85,12 @@ class _MenuFormDialogState extends State<MenuFormDialog> {
       TextFormField(
         controller: _categoryController,
         decoration: const InputDecoration(
-          labelText: 'Kategori (Cth: Coto, Pendamping, Minuman)',
+          labelText: 'Kategori',
+          hintText: 'Cth: makanan, minuman, sampingan',
         ),
-        validator: (value) =>
-            (value == null || value.trim().isEmpty) ? 'Kategori' : null,
+        validator: (value) => (value == null || value.trim().isEmpty)
+            ? 'Kategori wajib di isi!'
+            : null,
       ),
       const SizedBox(height: 12),
       TextFormField(
