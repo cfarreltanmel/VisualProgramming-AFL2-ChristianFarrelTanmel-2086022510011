@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class AppConstants {
   static const String appName = 'Warung Coto Depag';
-  static const String storageKey = 'warung_coto_menus';
 }
 
 class AppTheme {
